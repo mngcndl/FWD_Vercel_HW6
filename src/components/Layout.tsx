@@ -9,13 +9,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>My Personal Website</title>
-        <meta
-          name="description"
-          content="My personal website built with Next.js"
-        />
+        <title>My Portfolio</title>
+        <meta name="description" content="Here you can find some info about me" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="author" content="Liubov Smirnova" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <main>{children}</main>
