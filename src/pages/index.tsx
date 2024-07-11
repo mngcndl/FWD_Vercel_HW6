@@ -13,14 +13,17 @@ const Home = () => {
       </Head>
 
       <main className={styles.main}>
-        <img src="/profile-simple.jpg" alt="Profile picture" className={styles.photo} />
-        <h1 className={styles.title}>
-          Hi, I am Liubov Smirnova
-        </h1>
+        <img
+          src="/profile-simple.jpg"
+          alt="Profile picture"
+          className={styles.photo}
+        />
+        <h1 className={styles.title}>Hi, I am Liubov Smirnova</h1>
         <p className={styles.description}>
-            I am a student at the Innopolis University and an iOS development enthusiast.
-            I am looking for collaboration on mobile, frontend, and backend development,
-            so if you want to collaborate, do not hesitate to reach out to me.
+          I am a student at the Innopolis University and an iOS development
+          enthusiast. I am looking for collaboration on mobile, frontend, and
+          backend development, so if you want to collaborate, do not hesitate to
+          reach out to me.
         </p>
       </main>
     </div>

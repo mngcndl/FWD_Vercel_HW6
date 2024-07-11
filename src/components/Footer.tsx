@@ -9,14 +9,26 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <a href="https://github.com/mngcndl" target="_blank" rel="noopener noreferrer">
-        <Image src={ ghPhoto } alt="GitHub" className={styles.icon} />
+      <a
+        href="https://github.com/mngcndl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image src={ghPhoto} alt="GitHub" className={styles.icon} />
       </a>
-      <a href="https://t.me/mangocandle" target="_blank" rel="noopener noreferrer">
-        <Image src={ tgPhoto } alt="Telegram" className={styles.icon} />
+      <a
+        href="https://t.me/mangocandle"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image src={tgPhoto} alt="Telegram" className={styles.icon} />
       </a>
-      <a href="mailto:sldycpex@gmail.com" target="_blank" rel="noopener noreferrer">
-        <Image src={ mailPhoto } alt="Email" className={styles.icon} />
+      <a
+        href="mailto:sldycpex@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image src={mailPhoto} alt="Email" className={styles.icon} />
       </a>
     </footer>
   );

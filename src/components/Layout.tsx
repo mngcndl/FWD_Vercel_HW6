@@ -10,7 +10,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Head>
         <title>My Personal Website</title>
-        <meta name="description" content="My personal website built with Next.js" />
+        <meta
+          name="description"
+          content="My personal website built with Next.js"
+        />
         <meta name="author" content="Liubov Smirnova" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

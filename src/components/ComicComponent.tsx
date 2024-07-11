@@ -23,7 +23,7 @@ const ComicComponent: React.FC<ComicProps> = ({ comicData }) => {
   const comicReleaseDate = new Date(
     parseInt(comicData.year),
     parseInt(comicData.month) - 1,
-    parseInt(comicData.day)
+    parseInt(comicData.day),
   );
 
   return (
@@ -40,13 +40,17 @@ const ComicComponent: React.FC<ComicProps> = ({ comicData }) => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const email = 'l.smirnova@innopolis.university';
-  const idResponse = await fetch(`https://fwd.innopolis.university/api/hw2?email=${email}`);
+  const idResponse = await fetch(
+    `https://fwd.innopolis.university/api/hw2?email=${email}`,
+  );
   const comicId = await idResponse.json();
-  const comicResponse = await fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
+  const comicResponse = await fetch(
+    `https://fwd.innopolis.university/api/comic?id=${comicId}`,
+  );
   const comicData: Comic = await comicResponse.json();
 
   return {
-    props: { comicData }
+    props: { comicData },
   };
 };
 

@@ -1,41 +1,40 @@
 /* styles/Projects.module.css */
 
 .projects-section {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text content within the section */
-  }
-  
-  .projects-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%; /* Ensure list takes full width */
-    text-align: center; /* Center the list items horizontally */
-  }
-  
-  .projects-list .list-item {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    width: 100%; /* Ensure list items take full width */
-  }
-  
-  .projects-list .list-item span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: block; /* Ensure text is centered vertically */
-    text-align: center; /* Center text content horizontally */
-  }
-  
-  .projects-header {
-    margin-bottom: 2rem; /* Optional: Adjust margin as needed */
-    line-height: 1.15; /* Adjust line-height if necessary */
-    font-size: 4rem; /* Adjust font size if necessary */
-    text-align: center; /* Center the header text */
-  }
-  
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text content within the section */
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure list takes full width */
+  text-align: center; /* Center the list items horizontally */
+}
+
+.projects-list .list-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%; /* Ensure list items take full width */
+}
+
+.projects-list .list-item span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block; /* Ensure text is centered vertically */
+  text-align: center; /* Center text content horizontally */
+}
+
+.projects-header {
+  margin-bottom: 2rem; /* Optional: Adjust margin as needed */
+  line-height: 1.15; /* Adjust line-height if necessary */
+  font-size: 4rem; /* Adjust font size if necessary */
+  text-align: center; /* Center the header text */
+}
