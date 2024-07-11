@@ -1,0 +1,36 @@
+/* styles/Comic.module.css */
+
+.comic-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .comic-header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comic-content {
+    margin-top: 2rem;
+  }
+  
+  .comic-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comic-title {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .comic-date {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
