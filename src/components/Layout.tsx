@@ -10,7 +10,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Head>
         <title>My Portfolio</title>
-        <meta name="description" content="Here you can find some info about me" />
+        <meta
+          name="description"
+          content="Here you can find some info about me"
+        />
         <link rel="icon" href="/favicon.png" />
         <meta name="author" content="Liubov Smirnova" />
       </Head>

@@ -66,7 +66,7 @@
 // src/pages/comic.tsx or pages/comic.tsx
 
 import React from 'react';
-import ComicComponent from '../components/ComicComponent'; 
+import ComicComponent from '../components/ComicComponent';
 
 interface Comic {
   month: string;
@@ -83,7 +83,7 @@ interface Comic {
 }
 
 interface ComicPageProps {
-  comicData: Comic; 
+  comicData: Comic;
 }
 
 const ComicPage: React.FC<ComicPageProps> = ({ comicData }) => {
@@ -98,15 +98,21 @@ export const getServerSideProps = async () => {
   try {
     const email = 'l.smirnova@innopolis.university';
 
-    const idResponse = await fetch(`https://fwd.innopolis.university/api/hw2?email=${email}`);
+    const idResponse = await fetch(
+      `https://fwd.innopolis.university/api/hw2?email=${email}`,
+    );
     if (!idResponse.ok) {
       throw new Error(`Failed to fetch comic ID: ${idResponse.statusText}`);
     }
     const comicId = await idResponse.json();
 
-    const comicResponse = await fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
+    const comicResponse = await fetch(
+      `https://fwd.innopolis.university/api/comic?id=${comicId}`,
+    );
     if (!comicResponse.ok) {
-      throw new Error(`Failed to fetch comic data: ${comicResponse.statusText}`);
+      throw new Error(
+        `Failed to fetch comic data: ${comicResponse.statusText}`,
+      );
     }
     const comicData: Comic = await comicResponse.json();
 
